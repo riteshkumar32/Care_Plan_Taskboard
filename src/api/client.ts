@@ -1,8 +1,3 @@
-// ─── API Client ───────────────────────────────────────────────────────────────
-// Handles HTTP, retries, and DTO → domain model normalization.
-// Unknown/missing fields are coerced to safe defaults so the UI never crashes
-// on partial backend responses.
-
 import type {
   Patient,
   PatientDTO,

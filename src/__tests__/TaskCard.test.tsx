@@ -1,5 +1,3 @@
-// Tests for TaskCard — covers optimistic update render + error rollback display.
-
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { TaskCard } from "../components/TaskCard";

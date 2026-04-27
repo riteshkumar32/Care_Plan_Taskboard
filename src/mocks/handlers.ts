@@ -1,6 +1,3 @@
-// ─── MSW Mock Handlers ────────────────────────────────────────────────────────
-// Simulates the backend. Swap for real API by removing the MSW setup.
-
 import { http, HttpResponse, delay } from "msw";
 
 const patients = [

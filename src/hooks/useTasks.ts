@@ -1,12 +1,8 @@
-// ─── Custom Hooks ─────────────────────────────────────────────────────────────
-
 import { useEffect } from "react";
 import { useTaskboardStore, selectFilteredTasks } from "../store/taskboardStore";
 import type { Task } from "../types";
 
-/**
- * Loads patients once on mount. Returns patients + loading/error state.
- */
+
 export function usePatients() {
   const patients = useTaskboardStore((s) => s.patients);
   const loading = useTaskboardStore((s) => s.loading.patients);
@@ -17,7 +13,7 @@ export function usePatients() {
     if (patients.length === 0) {
       loadPatients();
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return { patients, loading, error, reload: loadPatients };
 }

@@ -1,5 +1,3 @@
-// Tests for API client normalization — ensures malformed/partial DTOs don't crash the UI.
-
 import { normalizeTask, normalizePatient } from "../api/client";
 import type { TaskDTO, PatientDTO } from "../types";
 

@@ -1,12 +1,3 @@
-// ─── Zustand Store ────────────────────────────────────────────────────────────
-// WHY ZUSTAND over React Query / Redux / Context:
-//  - React Query is excellent for server state but we need fine-grained control
-//    over optimistic update rollback with explicit error tracking per task.
-//  - Redux adds boilerplate that isn't justified at this scale.
-//  - Context + useReducer works but causes re-renders across unrelated components.
-//  - Zustand gives us a single source of truth, minimal boilerplate, and
-//    slice-level subscriptions so only the affected rows re-render.
-
 import { create } from "zustand";
 import type { Patient, Task, Filters, OptimisticUpdate, TaskStatus, CreateTaskPayload, UpdateTaskPayload } from "../types";
 import * as api from "../api/client";
