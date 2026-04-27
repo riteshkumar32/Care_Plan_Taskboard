@@ -16,20 +16,12 @@ A frontend task management board for dialysis center staff. Tracks patient care 
 
 ## How to Run
 
-### First time setup
-
 ```bash
 npm install
-mkdir public
-npx msw init public/ --save
 npm run dev
 ```
 
-### Every time after that
 
-```bash
-npm run dev
-```
 
 Open browser at: **http://localhost:5173**
 
